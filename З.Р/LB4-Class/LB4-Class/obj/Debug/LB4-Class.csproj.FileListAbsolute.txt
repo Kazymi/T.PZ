@@ -1,0 +1,10 @@
+C:\Users\Kazym\Desktop\З.Р\LB4-Class\LB4-Class\bin\Debug\LB4-Class.exe.config
+C:\Users\Kazym\Desktop\З.Р\LB4-Class\LB4-Class\bin\Debug\LB4-Class.exe
+C:\Users\Kazym\Desktop\З.Р\LB4-Class\LB4-Class\bin\Debug\LB4-Class.pdb
+C:\Users\Kazym\Desktop\З.Р\LB4-Class\LB4-Class\obj\Debug\LB4-Class.csprojAssemblyReference.cache
+C:\Users\Kazym\Desktop\З.Р\LB4-Class\LB4-Class\obj\Debug\LB4_Class.Form1.resources
+C:\Users\Kazym\Desktop\З.Р\LB4-Class\LB4-Class\obj\Debug\LB4_Class.Properties.Resources.resources
+C:\Users\Kazym\Desktop\З.Р\LB4-Class\LB4-Class\obj\Debug\LB4-Class.csproj.GenerateResource.cache
+C:\Users\Kazym\Desktop\З.Р\LB4-Class\LB4-Class\obj\Debug\LB4-Class.csproj.CoreCompileInputs.cache
+C:\Users\Kazym\Desktop\З.Р\LB4-Class\LB4-Class\obj\Debug\LB4-Class.exe
+C:\Users\Kazym\Desktop\З.Р\LB4-Class\LB4-Class\obj\Debug\LB4-Class.pdb

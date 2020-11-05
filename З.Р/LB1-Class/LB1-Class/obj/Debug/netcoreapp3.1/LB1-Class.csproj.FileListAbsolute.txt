@@ -1,0 +1,13 @@
+C:\Users\Kazym\Desktop\З.Р\LB1-Class\LB1-Class\obj\Debug\netcoreapp3.1\LB1-Class.csprojAssemblyReference.cache
+C:\Users\Kazym\Desktop\З.Р\LB1-Class\LB1-Class\obj\Debug\netcoreapp3.1\LB1-Class.AssemblyInfoInputs.cache
+C:\Users\Kazym\Desktop\З.Р\LB1-Class\LB1-Class\obj\Debug\netcoreapp3.1\LB1-Class.AssemblyInfo.cs
+C:\Users\Kazym\Desktop\З.Р\LB1-Class\LB1-Class\obj\Debug\netcoreapp3.1\LB1-Class.csproj.CoreCompileInputs.cache
+C:\Users\Kazym\Desktop\З.Р\LB1-Class\LB1-Class\bin\Debug\netcoreapp3.1\LB1-Class.exe
+C:\Users\Kazym\Desktop\З.Р\LB1-Class\LB1-Class\bin\Debug\netcoreapp3.1\LB1-Class.deps.json
+C:\Users\Kazym\Desktop\З.Р\LB1-Class\LB1-Class\bin\Debug\netcoreapp3.1\LB1-Class.runtimeconfig.json
+C:\Users\Kazym\Desktop\З.Р\LB1-Class\LB1-Class\bin\Debug\netcoreapp3.1\LB1-Class.runtimeconfig.dev.json
+C:\Users\Kazym\Desktop\З.Р\LB1-Class\LB1-Class\bin\Debug\netcoreapp3.1\LB1-Class.dll
+C:\Users\Kazym\Desktop\З.Р\LB1-Class\LB1-Class\bin\Debug\netcoreapp3.1\LB1-Class.pdb
+C:\Users\Kazym\Desktop\З.Р\LB1-Class\LB1-Class\obj\Debug\netcoreapp3.1\LB1-Class.dll
+C:\Users\Kazym\Desktop\З.Р\LB1-Class\LB1-Class\obj\Debug\netcoreapp3.1\LB1-Class.pdb
+C:\Users\Kazym\Desktop\З.Р\LB1-Class\LB1-Class\obj\Debug\netcoreapp3.1\LB1-Class.genruntimeconfig.cache
