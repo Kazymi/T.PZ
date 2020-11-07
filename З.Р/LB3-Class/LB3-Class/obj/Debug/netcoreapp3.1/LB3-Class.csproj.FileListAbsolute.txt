@@ -11,3 +11,16 @@ C:\Users\Kazym\Desktop\З.Р\LB3-Class\LB3-Class\obj\Debug\netcoreapp3.1\LB3-Cla
 C:\Users\Kazym\Desktop\З.Р\LB3-Class\LB3-Class\obj\Debug\netcoreapp3.1\LB3-Class.dll
 C:\Users\Kazym\Desktop\З.Р\LB3-Class\LB3-Class\obj\Debug\netcoreapp3.1\LB3-Class.pdb
 C:\Users\Kazym\Desktop\З.Р\LB3-Class\LB3-Class\obj\Debug\netcoreapp3.1\LB3-Class.genruntimeconfig.cache
+C:\Users\Kazym\Desktop\T.Z\T.PZ\З.Р\LB3-Class\LB3-Class\bin\Debug\netcoreapp3.1\LB3-Class.exe
+C:\Users\Kazym\Desktop\T.Z\T.PZ\З.Р\LB3-Class\LB3-Class\bin\Debug\netcoreapp3.1\LB3-Class.deps.json
+C:\Users\Kazym\Desktop\T.Z\T.PZ\З.Р\LB3-Class\LB3-Class\bin\Debug\netcoreapp3.1\LB3-Class.runtimeconfig.json
+C:\Users\Kazym\Desktop\T.Z\T.PZ\З.Р\LB3-Class\LB3-Class\bin\Debug\netcoreapp3.1\LB3-Class.runtimeconfig.dev.json
+C:\Users\Kazym\Desktop\T.Z\T.PZ\З.Р\LB3-Class\LB3-Class\bin\Debug\netcoreapp3.1\LB3-Class.dll
+C:\Users\Kazym\Desktop\T.Z\T.PZ\З.Р\LB3-Class\LB3-Class\bin\Debug\netcoreapp3.1\LB3-Class.pdb
+C:\Users\Kazym\Desktop\T.Z\T.PZ\З.Р\LB3-Class\LB3-Class\obj\Debug\netcoreapp3.1\LB3-Class.csprojAssemblyReference.cache
+C:\Users\Kazym\Desktop\T.Z\T.PZ\З.Р\LB3-Class\LB3-Class\obj\Debug\netcoreapp3.1\LB3-Class.AssemblyInfoInputs.cache
+C:\Users\Kazym\Desktop\T.Z\T.PZ\З.Р\LB3-Class\LB3-Class\obj\Debug\netcoreapp3.1\LB3-Class.AssemblyInfo.cs
+C:\Users\Kazym\Desktop\T.Z\T.PZ\З.Р\LB3-Class\LB3-Class\obj\Debug\netcoreapp3.1\LB3-Class.csproj.CoreCompileInputs.cache
+C:\Users\Kazym\Desktop\T.Z\T.PZ\З.Р\LB3-Class\LB3-Class\obj\Debug\netcoreapp3.1\LB3-Class.dll
+C:\Users\Kazym\Desktop\T.Z\T.PZ\З.Р\LB3-Class\LB3-Class\obj\Debug\netcoreapp3.1\LB3-Class.pdb
+C:\Users\Kazym\Desktop\T.Z\T.PZ\З.Р\LB3-Class\LB3-Class\obj\Debug\netcoreapp3.1\LB3-Class.genruntimeconfig.cache

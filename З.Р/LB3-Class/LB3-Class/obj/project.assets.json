@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kazym\\Desktop\\З.Р\\LB3-Class\\LB3-Class\\LB3-Class.csproj",
+      "projectUniqueName": "C:\\Users\\Kazym\\Desktop\\T.Z\\T.PZ\\З.Р\\LB3-Class\\LB3-Class\\LB3-Class.csproj",
       "projectName": "LB3-Class",
-      "projectPath": "C:\\Users\\Kazym\\Desktop\\З.Р\\LB3-Class\\LB3-Class\\LB3-Class.csproj",
+      "projectPath": "C:\\Users\\Kazym\\Desktop\\T.Z\\T.PZ\\З.Р\\LB3-Class\\LB3-Class\\LB3-Class.csproj",
       "packagesPath": "C:\\Users\\Kazym\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kazym\\Desktop\\З.Р\\LB3-Class\\LB3-Class\\obj\\",
+      "outputPath": "C:\\Users\\Kazym\\Desktop\\T.Z\\T.PZ\\З.Р\\LB3-Class\\LB3-Class\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kazym\\AppData\\Roaming\\NuGet\\NuGet.Config",

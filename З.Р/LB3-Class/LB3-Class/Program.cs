@@ -46,127 +46,136 @@ namespace LB3
                 int Count = 0;
                 while (true)
                 {
-                Todo:
-                    Console.Clear();
-                    Console.WriteLine("Выберите действия...");
-                    Console.WriteLine("1: Добавить несколько клиентов \n2: Вывод всех клиентов \n3: Удаление по номеру \n4: Поиск по номеру \n5: Копировать список. \n6: Очистить списки \n7: Сортировки \n8: Выход");
-                    try
-                    {
-                        Count = Convert.ToInt32(Console.ReadLine());
+                    try {
+                    Todo:
+                        Console.Clear();
+                        Console.WriteLine("Выберите действия...");
+                        Console.WriteLine("1: Добавить несколько клиентов \n2: Вывод всех клиентов \n3: Удаление по номеру \n4: Поиск по номеру \n5: Копировать список. \n6: Очистить списки \n7: Сортировки \n8: Выход");
+                        try
+                        {
+                            Count = Convert.ToInt32(Console.ReadLine());
+                        }
+                        catch (Exception)
+                        {
+                            Console.WriteLine("Неверные данные...");
+                            Console.ReadLine();
+                            goto Todo;
+                        }
+                        switch (Count)
+                        {
+
+                            case 1:
+                                try
+                                {
+                                    Console.WriteLine("Вставить из копировоного списка? \n1: Да \n2: Нет");
+                                    int Coun = 0;
+                                    Coun = Convert.ToInt32(Console.ReadLine());
+                                    if (Coun == 1)
+                                    {
+                                        if (CopyClients.Count != 0)
+                                            for (int CopParent = 0; CopParent != CopyClients.Count; CopParent++) //добавляет в список Client данные из CopyClient. Так как клиент содержит уникальные ID, при копировании неполучиться их сохранить, так-что мы просто создаем новый. 
+                                            {
+                                                Clients.Add(new ClientMedCentr(CopyClients[CopParent].Name, CopyClients[CopParent].Fio, CopyClients[CopParent].Mobile, CopyClients[CopParent].IsPrice, CopyClients[CopParent].Days));
+                                            }
+                                        else Console.WriteLine("Буфер пуст.");
+                                        break;
+                                    }
+                                    Console.Clear();
+                                    Console.WriteLine("Количество новых клиентов?");
+                                    int i = 0;
+                                    i = Convert.ToInt32(Console.ReadLine());
+                                    if (i < 0) i = 0;
+                                    for (int j = 0; j != i; j++) //количесто новых клиентов.
+                                    {
+                                        NewClient();
+                                    }
+                                }
+                                catch (Exception)
+                                {
+                                    Console.WriteLine("Вы ввели неверные данные...");
+                                    Console.ReadLine();
+                                    goto Todo;
+                                }
+                                break;
+                            case 2:
+                                foreach (ClientMedCentr i in Clients)
+                                {
+                                    i.print();
+                                }
+                                break;
+                            case 3:
+                                Console.Clear();
+                                Console.WriteLine("Введите номер");
+                                int X = Convert.ToInt32(Console.ReadLine());
+                                bool IsFound = false;
+                                for (int i = 0; i != Clients.Count; i++)
+                                {
+                                    if (Clients[i].ID == X) { Clients.RemoveAt(i); IsFound = true; Console.WriteLine("Удалено"); break; }
+                                }
+                                if (!IsFound) Console.WriteLine("Клиент с таким номером не найден");
+                                break;
+                            case 4:
+                                Console.Clear();
+                                Console.WriteLine("Введите номер");
+                                int Z = Convert.ToInt32(Console.ReadLine());
+                                bool IsFound1 = false;
+                                for (int i = 0; i != Clients.Count; i++) //поиск по норму и вывод на экран
+                                {
+                                    if (Clients[i].ID == Z) { Clients[i].print(); IsFound1 = true; break; }
+                                }
+                                if (!IsFound1) Console.WriteLine("Клиент с таким номером не найден");
+                                break;
+                            case 5:
+                                CopyClients = new List<ClientMedCentr>(); foreach (ClientMedCentr client in Clients)
+                                {
+                                    CopyClients.Add(client); //добавляем данные в список CopyClient
+                                }
+                                Console.WriteLine("Успешно.");
+                                break;
+                            case 6:
+                                Console.WriteLine("Вы уверены? \n1: Да \n2: нет");
+                                int B = 0;
+                                B = Convert.ToInt32(Console.ReadLine());
+                                if (B == 1) Clients = new List<ClientMedCentr>(); //обнуляем данные
+
+
+                                break;
+                            case 7:
+
+                                Console.WriteLine("Выбрите вариант сортивки");
+                                Console.WriteLine("1: ФИО> А-Я \n2: ФИО> Я-А \n3: ID: 0*...");
+                                int countSort = Convert.ToInt32(Console.ReadLine());
+                                switch (countSort)
+                                {
+                                    case 1:
+                                        ClientMedCentr.Sort1 = ClientMedCentr.SortSetting.SortFio1;
+                                        Clients.Sort();
+                                        Console.WriteLine("Сортировка по фамилии...");
+                                        break;
+                                    case 2:
+                                        ClientMedCentr.Sort1 = ClientMedCentr.SortSetting.SortFio2;
+                                        Clients.Sort();
+                                        Console.WriteLine("Сортировка по фамилии...");
+                                        break;
+                                    case 3:
+                                        ClientMedCentr.Sort1 = ClientMedCentr.SortSetting.SortID;
+                                        Clients.Sort();
+                                        Console.WriteLine("Сортировка по номеру...");
+                                        break;
+                                }
+
+
+                                break;
+                        }
+                        Console.ReadLine();
                     }
                     catch (Exception)
                     {
-                        Console.WriteLine("Неверные данные...");
+                        Console.WriteLine("Вы ввели не верный параметр.");
                         Console.ReadLine();
-                        goto Todo;
+
                     }
-                    switch (Count)
-                    {
-                        case 1:
-                            try
-                            {
-                                Console.WriteLine("Вставить из копировоного списка? \n1: Да \n2: Нет");
-                                int Coun = 0;
-                                Coun = Convert.ToInt32(Console.ReadLine());
-                                if (Coun == 1)
-                                {
-                                    if (CopyClients.Count != 0)
-                                        for(int CopParent = 0; CopParent != CopyClients.Count; CopParent++) //добавляет в список Client данные из CopyClient. Так как клиент содержит уникальные ID, при копировании неполучиться их сохранить, так-что мы просто создаем новый. 
-                                        {
-                                            Clients.Add(new ClientMedCentr(CopyClients[CopParent].Name, CopyClients[CopParent].Fio, CopyClients[CopParent].Mobile, CopyClients[CopParent].IsPrice, CopyClients[CopParent].Days));
-                                        }
-                                    else Console.WriteLine("Буфер пуст.");
-                                    break;
-                                }
-                                Console.Clear();
-                                Console.WriteLine("Количество новых клиентов?");
-                                int i = 0;
-                                i = Convert.ToInt32(Console.ReadLine());
-                                if (i < 0) i = 0;
-                                for (int j = 0; j != i; j++) //количесто новых клиентов.
-                                {
-                                    NewClient();
-                                }
-                            }
-                            catch (Exception)
-                            {
-                                Console.WriteLine("Вы ввели неверные данные...");
-                                Console.ReadLine();
-                                goto Todo;
-                            }
-                            break;
-                        case 2:
-                            foreach (ClientMedCentr i in Clients)
-                            {
-                                i.print();
-                            }
-                            break;
-                        case 3:
-                            Console.Clear();
-                            Console.WriteLine("Введите номер");
-                            int X = Convert.ToInt32(Console.ReadLine());
-                            bool IsFound = false;
-                            for (int i = 0; i != Clients.Count; i++)
-                            {
-                                if (Clients[i].ID == X) { Clients.RemoveAt(i); IsFound = true; Console.WriteLine("Удалено"); break; }
-                            }
-                            if (!IsFound) Console.WriteLine("Клиент с таким номером не найден");
-                            break;
-                        case 4:
-                            Console.Clear();
-                            Console.WriteLine("Введите номер");
-                            int Z = Convert.ToInt32(Console.ReadLine());
-                            bool IsFound1 = false;
-                            for (int i = 0; i != Clients.Count; i++) //поиск по норму и вывод на экран
-                            {
-                                if (Clients[i].ID == Z) { Clients[i].print(); IsFound1 = true; break; }
-                            }
-                            if (!IsFound1) Console.WriteLine("Клиент с таким номером не найден");
-                            break;
-                        case 5:
-                            CopyClients = new List<ClientMedCentr>(); foreach(ClientMedCentr client in Clients)
-                            {
-                                CopyClients.Add(client); //добавляем данные в список CopyClient
-                            }
-                            Console.WriteLine("Успешно.");
-                            break;
-                        case 6:
-                            Console.WriteLine("Вы уверены? \n1: Да \n2: нет");
-                            int B = 0;
-                            B = Convert.ToInt32(Console.ReadLine());
-                            if (B == 1) Clients = new List<ClientMedCentr>(); //обнуляем данные
-
-
-                            break;
-                        case 7:
-
-                            Console.WriteLine("Выбрите вариант сортивки");
-                            Console.WriteLine("1: ФИО> А-Я \n2: ФИО> Я-А \n3: ID: 0*...");
-                            int countSort = Convert.ToInt32(Console.ReadLine());
-                            switch (countSort)
-                            {
-                                case 1:
-                                    ClientMedCentr.Sort1 = ClientMedCentr.SortSetting.SortFio1;
-                                    Clients.Sort();
-                                    Console.WriteLine("Сортировка по фамилии...");
-                                    break;
-                                case 2:
-                                    ClientMedCentr.Sort1 = ClientMedCentr.SortSetting.SortFio2;
-                                    Clients.Sort();
-                                    Console.WriteLine("Сортировка по фамилии...");
-                                    break;
-                                case 3:
-                                    ClientMedCentr.Sort1 = ClientMedCentr.SortSetting.SortID;
-                                    Clients.Sort();
-                                    Console.WriteLine("Сортировка по номеру...");
-                                    break;
-                            }
-                               
-
-                            break;
                     }
-                    Console.ReadLine();
-                }
             }
             void NewClient() //создание нового клиента. Тут есть проверка, на случай если данные будут введены не верно, номер в 2 символа, там, пустые строчки
             {
